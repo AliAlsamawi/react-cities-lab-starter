@@ -1,4 +1,3 @@
-// IMPORT useState
 import React, { useState } from "react";
 import imagesArr from './imageData'
 import "./styles.css";
@@ -21,6 +20,7 @@ const handelclick = (imgUrl)=>{
 const images = imagesArr.map((element, index)=>{
   return(
     <img
+    style={{ border: bigImage === element.img ? "5px solid green" : "" }}
     src={element.img}
     alt={element.city}
     className = {"thumb"}
